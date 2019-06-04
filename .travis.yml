@@ -10,7 +10,7 @@ install:
 - dep ensure
 
 script:
-- sudo go test ./test/
+- sudo $(which go) test ./test/
 
 deploy:
 - provider: script
