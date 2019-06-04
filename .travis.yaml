@@ -1,0 +1,15 @@
+language: go
+go:
+- 1.12.x
+install:
+- go get github.com/golang/dep/cmd/dep
+- dep ensure
+script:
+- cd test ; sudo go test
+
+deploy:
+- provider: script
+  skip_cleanup: true
+  script: curl -sL https://git.io/goreleaser | bash
+  on:
+    tags: true
