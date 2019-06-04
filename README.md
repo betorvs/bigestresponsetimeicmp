@@ -1,6 +1,6 @@
 # Biggest Response Time
 
-TravisCI: [![Build Status](https://travis-ci.org/betorvs/bigestresponsetimeicmp.svg?branch=master)](https://travis-ci.org/betorvs/bigestresponsetimeicmp)
+TravisCI: [![Build Status](https://travis-ci.org/betorvs/biggestresponsetimeicmp.svg?branch=master)](https://travis-ci.org/betorvs/biggestresponsetimeicmp)
 
 This is a simple traceroute command, that print all tested response time until reach the remote server, and show the output of "bigest response time" separately.
 
