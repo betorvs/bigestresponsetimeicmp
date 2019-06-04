@@ -12,7 +12,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/betorvs/bigestresponsetimeicmp/domain"
+	"github.com/betorvs/biggestresponsetimeicmp/domain"
 )
 
 //DefaultPort const

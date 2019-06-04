@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	"github.com/betorvs/bigestresponsetimeicmp/usecase"
+	"github.com/betorvs/biggestresponsetimeicmp/usecase"
 )
 
 func TestRun(t *testing.T) {

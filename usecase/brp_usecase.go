@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/betorvs/bigestresponsetimeicmp/gateway"
+	"github.com/betorvs/biggestresponsetimeicmp/gateway"
 
-	"github.com/betorvs/bigestresponsetimeicmp/domain"
+	"github.com/betorvs/biggestresponsetimeicmp/domain"
 )
 
 //var biggest is used to keep all ipAddr:ResponseTime

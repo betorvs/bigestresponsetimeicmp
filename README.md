@@ -1,4 +1,4 @@
-# Bigest Response Time
+# Biggest Response Time
 
 TravisCI: [![Build Status](https://travis-ci.org/betorvs/bigestresponsetimeicmp.svg?branch=master)](https://travis-ci.org/betorvs/bigestresponsetimeicmp)
 
@@ -16,27 +16,27 @@ $ go build
 You must be root to run this command!
 
 ```
-$ sudo bigestresponsetime REMOTE_HOST
+$ sudo biggestresponsetime REMOTE_HOST
 ```
 
 ### Special Args
 
 Check Version command
 ```
-$ bigestresponsetime version
-bigestresponsetime Version:  0.1.0
+$ biggestresponsetime version
+biggestresponsetime Version:  0.1.0
 ```
 
 Check help command
 ```
-$ bigestresponsetime help
-Usage: sudo bigestresponsetime REMOTE_HOST
+$ biggestresponsetime help
+Usage: sudo biggestresponsetime REMOTE_HOST
 ```
 
 ## Example of Usage
 
 ```
-$ sudo ./bigestresponsetimeicmp google.com
+$ sudo ./biggestresponsetimeicmp google.com
 Password:
 Traceroute to google.com (216.58.206.14), 20 hops max, 52 byte packets
 1   192.168.178.1 (192.168.178.1)  2.054172ms

@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/betorvs/bigestresponsetimeicmp/config"
-	"github.com/betorvs/bigestresponsetimeicmp/usecase"
+	"github.com/betorvs/biggestresponsetimeicmp/config"
+	"github.com/betorvs/biggestresponsetimeicmp/usecase"
 )
 
 func init() {
