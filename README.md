@@ -2,7 +2,7 @@
 
 TravisCI: [![Build Status](https://travis-ci.org/betorvs/biggestresponsetimeicmp.svg?branch=master)](https://travis-ci.org/betorvs/biggestresponsetimeicmp)
 
-This is a simple traceroute command, that print all tested response time until reach the remote server, and show the output of "bigest response time" separately.
+This is a simple traceroute command, that print all tested response time until reach the remote server, and show the output of "biggest response time" separately.
 
 ## Build
 
@@ -82,7 +82,7 @@ The biggest response time is:  209.85.244.158 with 15.583812ms
 10  ams15s40-in-f4.1e100.net. (172.217.168.228)  15.734017ms
 
 error: lookup isbrobous.net: no such host
-ok      github.com/betorvs/bigestresponsetimeicmp/test  0.444s
+ok      github.com/betorvs/biggestresponsetimeicmp/test  0.444s
 ```
 
 

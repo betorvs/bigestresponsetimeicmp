@@ -28,12 +28,25 @@ func printJump(host domain.JumpedHost) {
 	}
 }
 
-//CalculateBigestResponseTime func main usecase
-func CalculateBigestResponseTime(host string) {
+//FindBiggestResponseTime
+func FindBiggestResponseTime(biggest map[[4]byte]int64) ([4]byte, int64) {
+	big := int64(0)
+	var key [4]byte
+	for k, v := range biggest {
+		if v > big {
+			big = v
+			key = k
+		}
+	}
+	return key, big
+}
+
+//CalculateBiggestResponseTime func main usecase
+func CalculateBiggestResponseTime(host string) {
 	ipAddr, err := net.ResolveIPAddr("ip", host)
 	if err != nil {
 		fmt.Println("error:", err)
-		os.Exit(0)
+		os.Exit(1)
 	}
 	biggest := make(map[[4]byte]int64)
 	fmt.Printf("Traceroute to %v (%v), %v hops max, %v byte packets\n", host, ipAddr, gateway.DefaultMaxJumps, gateway.DefaultPacketSize)
@@ -55,15 +68,7 @@ func CalculateBigestResponseTime(host string) {
 	if err != nil {
 		fmt.Println("Error: ", err)
 	}
-	big := int64(0)
-	var key [4]byte
-	for k, v := range biggest {
-		if v > big {
-			big = v
-			key = k
-		}
-		//fmt.Println(k, ":", v)
-	}
+	key, big := FindBiggestResponseTime(biggest)
 	addr := fmt.Sprintf("%v.%v.%v.%v", key[0], key[1], key[2], key[3])
 	fmt.Println("The biggest response time is: ", string(addr), "with", time.Duration(big))
 

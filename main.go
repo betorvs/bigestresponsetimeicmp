@@ -14,6 +14,6 @@ func init() {
 
 func main() {
 	//println("works: " + config.DestinationHost)
-	usecase.CalculateBigestResponseTime(config.DestinationHost)
+	usecase.CalculateBiggestResponseTime(config.DestinationHost)
 
 }

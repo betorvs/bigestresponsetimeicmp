@@ -14,7 +14,7 @@ var (
 
 // info to print how to use it
 func info() {
-	fmt.Println("Usage: sudo bigestresponsetime REMOTE_HOST")
+	fmt.Println("Usage: sudo biggestresponsetime REMOTE_HOST")
 	fmt.Println("You must run this command with root permissions")
 	fmt.Println("")
 }
@@ -26,7 +26,7 @@ func init() {
 	}
 	DestinationHost = os.Args[1]
 	if DestinationHost == "version" {
-		fmt.Println("bigestresponsetime Version: ", Version)
+		fmt.Println("biggestresponsetime Version: ", Version)
 		os.Exit(0)
 	}
 	if DestinationHost == "help" {
